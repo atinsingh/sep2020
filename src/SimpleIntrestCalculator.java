@@ -28,8 +28,23 @@ public class SimpleIntrestCalculator {
         ES ="Spaniel"
         method should recieve name of person to greeting
      */
-    public static void greeting() {
-        System.out.println("Greeting in EN");
+    public static void greeting(String name, String langCode) {
+        switch (langCode) {
+            case "EN" :
+                System.out.println("Hello, How are you " + name);
+                break;
+            case "ES" :
+                System.out.println("Hola,  " + name);
+                break;
+            case "HI" :
+                System.out.println("Namaste,  " + name);
+                break;
+            case "TM" :
+                System.out.println("Vadekam,  " + name);
+                break;
+            default:
+                System.out.println("Invalid lang code");
+        }
     }
 
     // write a method to sum two int values,
